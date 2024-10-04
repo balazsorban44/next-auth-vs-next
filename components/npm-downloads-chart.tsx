@@ -50,7 +50,7 @@ export default function Component() {
     }[]
   >([]);
   useEffect(() => {
-    getDownloads(30, 4).then((downloads) => {
+    getDownloads(7, 5).then((downloads) => {
       setData(downloads);
     });
     setIsMounted(true);
@@ -66,7 +66,7 @@ export default function Component() {
         NextAuth.js to Next.js Download Ratio
       </h2>
       <p className="text-sm text-gray-600 mb-6">
-        Monthly comparison of NextAuth.js downloads as a percentage of Next.js
+        Weekly comparison of NextAuth.js downloads as a percentage of Next.js
         downloads
       </p>
       <div className="w-full h-[400px] sm:h-[500px] md:h-[600px]">
